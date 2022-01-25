@@ -1,5 +1,5 @@
 # React Template
-Template for a website built in React + Typescript + Sass, following best practices.
+Template for a website built in React + Typescript + Sass, following best practices. Refer to the wiki for queries or contact John or Kenneth
 
 ## Run Website
 Ensure all dependencies are installed
