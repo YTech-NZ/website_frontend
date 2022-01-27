@@ -33,11 +33,11 @@ function Header() {
           <a href="/" className='header__logo'>
             <img src={phLogo} alt="logo" />
           </a>
-          <a href="/" className='header__toggle hide-for-desktop' onClick={toggleMenu}>
+          <div className='header__toggle hide-for-desktop' onClick={toggleMenu}>
             <span></span>
             <span></span>
             <span></span>
-          </a>
+          </div>
           <div className="header__links hide-for-mobile">
             <a href="/">Home</a>
             <a href="/">About</a>
