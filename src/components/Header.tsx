@@ -3,6 +3,7 @@ import phLogo from '../assets/logo.png'
 import '../styles/header.scss'
 
 function Header() {
+  //React Hooks: useState, useEffect, useNavigation
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {

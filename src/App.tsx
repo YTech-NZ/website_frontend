@@ -1,6 +1,10 @@
 import React from 'react';
 import Header from './components/Header';
 
+//typescript
+//sass
+//React [hooks]
+
 function App() {
   return (
     <>
@@ -10,3 +14,5 @@ function App() {
 }
 
 export default App;
+
+//yarn add react-router-dom
