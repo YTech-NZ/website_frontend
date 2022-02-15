@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom';
 import './styles/globals.scss';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Landing from './screens/landing';
-import Events from './screens/events';
+import Landing from './screens/Landing';
+import Events from './screens/Events';
 
 ReactDOM.render(
   <BrowserRouter>

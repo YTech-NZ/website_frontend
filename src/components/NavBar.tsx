@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import phLogo from '../assets/logo.png'
-import '../styles/header.scss'
+import '../styles/navbar.scss'
 
 function NavBar() {
   //React Hooks: useState, useEffect, useNavigation
