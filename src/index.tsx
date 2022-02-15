@@ -1,11 +1,15 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/globals.scss';
-import App from './App';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Landing from './screens/Landing';
+import Events from './screens/Events';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="events" element={<Events />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
