@@ -1,0 +1,11 @@
+.section {
+    padding: 8rem 8vw;
+    width: 100vw;
+    background-color: white;
+    color: #00A888;
+
+    &.inverse{
+        background-color: #00A888;
+        color: white;
+    }
+}
