@@ -15,6 +15,9 @@ function Landing() {
             </Section>
             <Section >
                 {/* <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, numquam magni tempore sequi sed nisi nihil vero eum ipsum eligendi autem nulla dicta est. Pariatur optio quas impedit voluptates eveniet!</div> */}
+                {/* Source: https://stackoverflow.com/questions/15557392/how-do-i-display-images-from-google-drive-on-a-website  */}
+                {/* Format: https://drive.google.com/uc?export=view&id=... */}
+                {/* Will need to get the id. The id can be found between /d/ and /view  in the original URL*/}
                 <img src="https://drive.google.com/uc?export=view&id=1GD4DUn3ehKOqwz32R-tMjGnWSZw6wVlG"/>
             
             </Section>
