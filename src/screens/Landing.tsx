@@ -1,6 +1,7 @@
 import NavBar from '../components/Navbar';
 import Splash from '../components/Splash';
 import Section from '../widgets/Section';
+import ReactVideo from 'react.video';
 
 function Landing() {
     return (
@@ -9,6 +10,15 @@ function Landing() {
             <Splash />
             <Section>
                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, numquam magni tempore sequi sed nisi nihil vero eum ipsum eligendi autem nulla dicta est. Pariatur optio quas impedit voluptates eveniet!</div>
+            
+                <ReactVideo
+        ref={'VideoComp'}
+        cls={'custom-video'} 
+        height={500} width={'100%'}
+        
+        src={'http://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4'}
+        >
+      </ReactVideo>
             </Section>
             <Section inverse>
                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, numquam magni tempore sequi sed nisi nihil vero eum ipsum eligendi autem nulla dicta est. Pariatur optio quas impedit voluptates eveniet!</div>
