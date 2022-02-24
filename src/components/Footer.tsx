@@ -7,7 +7,7 @@ function Footer() {
         <Section black>
             <div className="footer">
                 <div className="footer__container">
-                    <img src={LOGO_BLACK}/>
+                    <img src={LOGO_BLACK} alt="YTech NZ logo black"/>
                     <div className="footer__container__list">
                         <li>Social Media Links</li>
                         <li>Sponsors</li>
