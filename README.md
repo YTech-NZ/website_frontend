@@ -11,3 +11,6 @@ Run local server
 ```
 yarn start
 ```
+
+## Deploy Website
+Navigate to `https://github.com/johnchen383/website_frontend` and click `fetch upstream` to sync changes. This will then be deployed to vercel at https://ytechnz-website.vercel.app/
