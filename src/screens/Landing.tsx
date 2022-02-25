@@ -1,6 +1,7 @@
 import NavBar from '../components/Navbar';
 import Splash from '../components/Splash';
 import Section from '../widgets/Section';
+import Images from '../widgets/Images';
 
 import "../styles/styles.scss"
 import YouTubeEmbed from "../components/YouTubeEmbed";
@@ -29,11 +30,12 @@ function Landing() {
                 {/* Source: https://stackoverflow.com/questions/15557392/how-do-i-display-images-from-google-drive-on-a-website  */}
                 {/* Format: https://drive.google.com/uc?export=view&id=... */}
                 {/* Will need to get the id. The id can be found between /d/ and /view  in the original URL*/}
-                <img src="https://drive.google.com/uc?export=view&id=1GD4DUn3ehKOqwz32R-tMjGnWSZw6wVlG"         // Image link
-                alt="Landing image"     // Description of image. 
-                width={700}            // Image width.
-                height={400}            // Image height. 
-                />
+                <div>
+                    <h1>Image</h1>
+                        <img = "https://drive.google.com/uc?export=view&id=1GD4DUn3ehKOqwz32R-tMjGnWSZw6wVlG"/>
+                        <Image url="https://drive.google.com/file/d/1GD4DUn3ehKOqwz32R-tMjGnWSZw6wVlG/view"/>
+                </div>
+            
             </Section>
             
             {/*Video*/}
