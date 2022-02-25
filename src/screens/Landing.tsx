@@ -2,7 +2,7 @@ import NavBar from '../components/Navbar';
 import Splash from '../components/Splash';
 import Section from '../widgets/Section';
 
-import "../styles/styles.css"
+import "../styles/styles.scss"
 import YouTubeEmbed from "../components/YouTubeEmbed";
 
 function Landing() {
