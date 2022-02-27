@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import NavBar from '../components/Navbar';
 import Splash from '../components/Splash';
 import Section from '../widgets/Section';
@@ -37,10 +38,8 @@ function Landing() {
                 <YouTubeVideo src="https://www.youtube.com/watch?v=iy3VW4L0dAY" />
             </Section>
 
-            {/*Footer*/}
-            <Section inverse>
-                <div>Footer stuff</div>
-            </Section>
+            
+            <Footer/>
         </>
     )
 }
