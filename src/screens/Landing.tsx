@@ -1,20 +1,20 @@
 import NavBar from '../components/Navbar';
 import Splash from '../components/Splash';
 import Section from '../widgets/Section';
-import Images from '../widgets/Images';
+import Image from '../widgets/Image';
 
 import "../styles/styles.scss"
-import YouTubeEmbed from "../components/YouTubeEmbed";
+import YouTubeVideo from "../widgets/YouTubeVideo";
 
 function Landing() {
     return (
         <>
             {/*Navigation bar at the website header*/}
             <NavBar />
-            
+
             {/*Splash section*/}
             <Splash />
-            
+
             {/*White section with green text*/}
             <Section>
                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, numquam magni tempore sequi sed nisi nihil vero eum ipsum eligendi autem nulla dicta est. Pariatur optio quas impedit voluptates eveniet!</div>
@@ -24,28 +24,19 @@ function Landing() {
             <Section inverse>
                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, numquam magni tempore sequi sed nisi nihil vero eum ipsum eligendi autem nulla dicta est. Pariatur optio quas impedit voluptates eveniet!</div>
             </Section>
-            
+
             {/*Image*/}
             <Section >
-                {/* Source: https://stackoverflow.com/questions/15557392/how-do-i-display-images-from-google-drive-on-a-website  */}
-                {/* Format: https://drive.google.com/uc?export=view&id=... */}
-                {/* Will need to get the id. The id can be found between /d/ and /view  in the original URL*/}
-                <div>
-                    <h1>Image</h1>
-                        <img = "https://drive.google.com/uc?export=view&id=1GD4DUn3ehKOqwz32R-tMjGnWSZw6wVlG"/>
-                        <Image url="https://drive.google.com/file/d/1GD4DUn3ehKOqwz32R-tMjGnWSZw6wVlG/view"/>
-                </div>
-            
+                <h1>Image</h1>
+                <Image src="https://drive.google.com/file/d/1GD4DUn3ehKOqwz32R-tMjGnWSZw6wVlG/view" />
             </Section>
-            
+
             {/*Video*/}
             <Section>
-                <div className="App">
-                    <h1>YouTube Embed</h1>
-                    <YouTubeEmbed embedId="iy3VW4L0dAY"/>   {/*Video Embed ID*/}
-                </div>
+                <h1>YouTube Video</h1>
+                <YouTubeVideo src="https://www.youtube.com/watch?v=iy3VW4L0dAY" />
             </Section>
-            
+
             {/*Footer*/}
             <Section inverse>
                 <div>Footer stuff</div>

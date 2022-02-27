@@ -1,22 +1,20 @@
-import React from 'react'
-import "../styles/images.scss";
+import "../styles/image.scss";
 
 // This function takes in the props object and converts the url into a usable form for website display. 
-function Images(props: any) {
+function Image(props: any) {
 
   //  Split string into substrings at the '/' and remove the blank space. 
   var url = props.src;
-  var url = url.split("/");
-  var blank = url.splice(1,1);
+  var parts = url.split("/");
 
   //  Obtain google drive image ID. 
-  var ID = url[url.length-2];
+  var id = parts[parts.length-2];
 
   //  Construct the image URL for website display. 
-  var output = url[0] + '//' + url[1] + '/uc?export=view&id=' + ID
+  var output = 'https://drive.google.com/uc?export=view&id=' + id;
 
-  return (output)
+  return <img className="cust_image" alt="YTech NZ drive" src={output}/>
 }
 
 
-export default Images
+export default Image
