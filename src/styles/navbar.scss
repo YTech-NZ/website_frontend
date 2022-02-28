@@ -6,7 +6,13 @@
 }
 
 .socials_wrapper {
-    justify-self: end;
+    justify-self: center;
+
+    a {
+        height: 40px !important;
+        width: 40px !important; 
+        margin-right: 10px;
+    }
 }
 
 .header {
