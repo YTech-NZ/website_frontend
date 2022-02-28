@@ -13,7 +13,7 @@ function Image(props: any) {
   //  Construct the image URL for website display. 
   var output = 'https://drive.google.com/uc?export=view&id=' + id;
 
-  return <img className="cust_image" alt="YTech NZ drive" src={output}/>
+  return <img className="cust-image" alt="YTech NZ drive" src={output}/>
 }
 
 

@@ -1,6 +1,4 @@
-// Source code: https://dev.to/bravemaster619/simplest-way-to-embed-a-youtube-video-in-your-react-app-3bk2
-
-import "../styles/youtube_video.scss";
+import "../styles/youtube-video.scss";
 
 function YouTubeVideo(props:any){
   
