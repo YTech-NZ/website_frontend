@@ -1,6 +1,14 @@
 @import "variables";
 @import "animations";
 
+.links_wrapper {
+    justify-self: end;
+}
+
+.socials_wrapper {
+    justify-self: end;
+}
+
 .header {
     //Header animations
     //if header has class of open as well
@@ -25,11 +33,13 @@
         background-color: $white;
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
+
+        grid-template-columns: repeat(3, 1fr);
     }
 
     &__logo {
         img {
-            height: 1.375rem;
+            height: 5rem;
             width: auto;
         }
     }
@@ -71,8 +81,9 @@
 
     &__links {
         a {
-            font-size: $font-sm;
-            color: $grayishBlue;
+            font-size: $font-nav;
+            font-weight: 600;
+            color: black;
             transition: color 300ms ease-in-out;
             position: relative;
 
@@ -120,5 +131,27 @@
         top: 0;
         left: 0;
         right: 0;
+    }
+}
+
+// change color based on page loaded
+.join_us {
+    a:nth-child(1) {
+        color: $brightCyan;
+    }
+}
+.events_active {
+    a:nth-child(2) {
+        color: $brightCyan;
+    }
+}
+.community {
+    a:nth-child(3) {
+        color: $brightCyan;
+    }
+}
+.join_us {
+    a:nth-child(4) {
+        color: $brightCyan;
     }
 }

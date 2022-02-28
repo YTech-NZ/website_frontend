@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import phLogo from '../assets/logo.png'
+import phLogo from '../assets/logo_rgb.png'
 import '../styles/navbar.scss'
 
 function NavBar() {
@@ -26,29 +26,49 @@ function NavBar() {
     return isMenuOpen ? "fade-in" : "fade-out"
   }
 
+  const currentRoute = () => {
+	switch(window.location.pathname){
+		case '/aboutus':
+			return 'aboutus_active';
+		case '/events':
+		  return 'events_active';
+		case '/community':
+		  return 'community_active';
+		case '/joinus':
+		  return 'joinus_active';
+	  }
+  }
+
+  let navElementToHighlight = currentRoute();
+
   return (
     <>
       <header className={`header ${fetchMenuClass()}`}>
         <div className={`overlay ${handleFades()} has-fade`}></div>
-        <nav className='flex flex-jc-sb flex-ai-c container'>
+        <nav className='grid container'>
           <a href="/" className='header__logo'>
             <img src={phLogo} alt="logo" />
           </a>
-          <div className='header__toggle hide-for-desktop' onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div className="header__links hide-for-mobile">
-            <a href="/">Home</a>
-            <a href="/">About</a>
-            <a href="/">Contact</a>
-            <a href="/">Blog</a>
-            <a href="/">Careers</a>
-          </div>
-          <a href="/" className="button header__cta hide-for-mobile">
-            CTA button
-          </a>
+					<div className="links_wrapper">
+						<div className='header__toggle hide-for-desktop' onClick={toggleMenu}>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
+							<a href="/">About Us</a>
+							<a href="/events">Events</a>
+							<a href="/">Community</a>
+							<a href="/">Join Us</a>
+						</div>
+					</div>
+					<div className="socials_wrapper">
+						<a>Facebook</a>
+						<a>Instagram</a>
+					</div>	
+					{/* <a href="/" className="button header__cta hide-for-mobile">
+						CTA button
+					</a> */}
         </nav>
         <div className={`header__menu ${handleFades()} has-fade`}>
           <a href="/">Home</a>
