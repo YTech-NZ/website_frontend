@@ -2,7 +2,7 @@ import NavBar from '../components/Navbar';
 import Splash from '../components/Splash';
 import Section from '../widgets/Section';
 import Image from '../widgets/Image';
-import YouTubeVideo from "../widgets/Youtube-Video";
+import YouTubeVideo from "../widgets/YoutubeVideo";
 
 function Landing() {
     return (

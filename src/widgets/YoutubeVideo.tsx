@@ -14,7 +14,7 @@ function YouTubeVideo(props:any){
     width = "720"
     height = "400"
     frameBorder="2"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allow="accelerometer; autoplay; clipboakrd-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
     title="Embedded Youtube"
   />
