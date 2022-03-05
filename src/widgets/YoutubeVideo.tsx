@@ -1,4 +1,4 @@
-import "../styles/youtube-video.scss";
+import "../styles/youtubeVideo.scss";
 
 function YouTubeVideo(props:any){
   
