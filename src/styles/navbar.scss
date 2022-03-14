@@ -38,6 +38,11 @@
 
         grid-template-columns: repeat(3, 1fr);
 
+        div {
+            align-self: end;
+            padding-bottom: 10px;
+        }
+
         // left links of logo should be right aligned
         div:nth-child(2) {
             justify-self: end;
@@ -47,7 +52,7 @@
     &__logo {
         justify-self: center;
         img {
-            height: 5rem;
+            height: 6rem;
             width: auto;
         }
     }
