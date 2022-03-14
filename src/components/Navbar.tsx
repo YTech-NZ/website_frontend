@@ -47,26 +47,28 @@ function NavBar() {
       <header className={`header ${fetchMenuClass()}`}>
         <div className={`overlay ${handleFades()} has-fade`}></div>
         <nav className='grid container'>
+          <div className='header__toggle hide-for-desktop' onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
+            <a href="/">About Us</a>
+            <a href="/events">Events</a>
+          </div>
+
           <a href="/" className='header__logo'>
             <img src={phLogo} alt="logo" />
           </a>
-					<div className="links_wrapper">
-						<div className='header__toggle hide-for-desktop' onClick={toggleMenu}>
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-						<div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
-							<a href="/">About Us</a>
-							<a href="/events">Events</a>
-							<a href="/">Community</a>
-							<a href="/">Join Us</a>
-						</div>
-					</div>
-					<div className="socials_wrapper">
+
+          <div className={`header__links hide-for-mobile header__links__right ${navElementToHighlight}`}>
+            <a href="/">Community</a>
+            <a href="/">Join Us</a>
+          </div>
+					{/* <div className="socials_wrapper">
 						<SocialIcon url="https://www.facebook.com/ytechnz/" />
 						<SocialIcon url="https://www.instagram.com/ytechnz/" />
-					</div>	
+					</div>	 */}
 					{/* <a href="/" className="button header__cta hide-for-mobile">
 						CTA button
 					</a> */}

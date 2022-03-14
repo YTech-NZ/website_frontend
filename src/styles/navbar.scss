@@ -1,19 +1,15 @@
 @import "variables";
 @import "animations";
 
-.links_wrapper {
-    justify-self: end;
-}
+// .socials_wrapper {
+//     justify-self: center;
 
-.socials_wrapper {
-    justify-self: center;
-
-    a {
-        height: 40px !important;
-        width: 40px !important; 
-        margin-right: 10px;
-    }
-}
+//     a {
+//         height: 40px !important;
+//         width: 40px !important; 
+//         margin-right: 10px;
+//     }
+// }
 
 .header {
     //Header animations
@@ -41,9 +37,15 @@
         padding-bottom: 1.0625rem;
 
         grid-template-columns: repeat(3, 1fr);
+
+        // left links of logo should be right aligned
+        div:nth-child(2) {
+            justify-self: end;
+        }
     }
 
     &__logo {
+        justify-self: center;
         img {
             height: 5rem;
             width: auto;
