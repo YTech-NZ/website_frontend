@@ -13,7 +13,7 @@
         justify-content: center;
 
         img {
-            width: 18vw;
+            width: 30vw;
 
             @include breakpoint-down(medium) {
                 //changes styles depending on screen width
@@ -21,13 +21,60 @@
             }
         }
 
-        &__list {
-            padding-top: 3rem;
+        &__row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
 
-            > li {
-                text-align: center;
-                font-weight: bold;
+            .linkedin img {
+                width: 4.5vw;
+                margin-top:4vw;
+                margin-left: 1.2vw;
+                margin-right: 1.2vw;
+                border-radius: 1vw;
+
+                @include breakpoint-down(medium) {
+                    width: 4.5vw;
             }
+        }
+
+            .facebook img {
+                width: 4.5vw;
+                margin-top:4vw;
+                margin-left: 1.2vw;
+                margin-right: 1.2vw;
+                border-radius: 1vw;
+
+                @include breakpoint-down(medium) {
+                    width: 4.5vw;
+            }
+        }
+
+        .instagram img {
+            width: 4.5vw;
+            margin-top:4vw;
+            margin-left: 1.2vw;
+            margin-right: 1.2vw;
+            border-radius: 1vw;
+
+            @include breakpoint-down(medium) {
+                width: 4.5vw;
+            }
+    }
+
+        .email img {
+            width: 4.5vw;
+            margin-top:4vw;
+            margin-left: 1.2vw;
+            margin-right: 1.2vw;
+            border-radius: 1vw;
+
+            @include breakpoint-down(medium) {
+                width: 4.5vw;
+            }
+    }
+
         }
     }
 }
