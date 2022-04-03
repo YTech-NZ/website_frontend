@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import phLogo from '../assets/logo.png'
+import phLogo from '../assets/logo_black.jpg'
 import '../styles/navbar.scss'
 
 function NavBar() {
