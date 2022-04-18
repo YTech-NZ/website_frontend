@@ -64,14 +64,14 @@ export default function AuthModal() {
     <div>
         <button 
             style={{
-                width: 85,
+                width: 100,
                 height: 40,
-                marginLeft: 15,
+                padding: 5,
                 backgroundColor: "#EEBC1D",
             }}
             onClick={handleOpen}
         >
-            Login
+            Admin Login
         </button>
       <Modal
         aria-labelledby="transition-modal-title"

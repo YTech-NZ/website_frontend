@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import phLogo from '../assets/logo_black.jpg'
 import '../styles/navbar.scss'
+import AuthModal from './Authentication/AuthModal';
 
 function NavBar() {
   //React Hooks: useState, useEffect, useNavigation
@@ -46,9 +47,9 @@ function NavBar() {
             <a href="/">Blog</a>
             <a href="/">Careers</a>
           </div>
-          <a href="/" className="button header__cta hide-for-mobile">
+          {/*<a href="/" className="button header__cta hide-for-mobile">
             CTA button
-          </a>
+  </a>*/} <AuthModal></AuthModal>
         </nav>
         <div className={`header__menu ${handleFades()} has-fade`}>
           <a href="/">Home</a>
