@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 
 import Section from '../../widgets/Section';
 import SignInViaEmail from '../firebase_hosting/SignInViaEmail';
@@ -26,7 +26,6 @@ function SignIn() {
         
         // calls sign in via email
         SignInViaEmail(email, password);
-
     }
 
 

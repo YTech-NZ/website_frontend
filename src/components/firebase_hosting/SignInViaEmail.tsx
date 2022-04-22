@@ -15,8 +15,6 @@ function SignInViaEmail(email: string, password:string){
         const errorMessage = error.Message;
     });
 
-    
-
 }
 
 export default SignInViaEmail
