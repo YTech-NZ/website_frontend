@@ -8,7 +8,6 @@ import Signup from './Signup';
 import { AppBar, Box, Tab, Tabs } from '@material-ui/core';
 import GoogleButton from 'react-google-button';
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { auth } from '../../Firebase';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -58,7 +57,7 @@ export default function AuthModal() {
   const googleProvider = new GoogleAuthProvider()
 
   const signInWithGoogle = () => {};
-    signInWithPopup(auth, googleProvider)
+    // signInWithPopup(auth, googleProvider)
 
   return (
     <div>
