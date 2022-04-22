@@ -1,7 +1,7 @@
 import {useState} from 'react';
 
 import Section from '../../widgets/Section';
-import SignInViaEmail from '../firebase_hosting/SignInViaEmail';
+import SignInViaEmail from './firebase_hosting/SignInViaEmail';
 
 function SignIn() {
 
@@ -19,13 +19,14 @@ function SignIn() {
         setPassword(event.target.value)
     }
 
-    // sends details to 
+    // sends details to firebase sign in method
     const handleSubmit = (event: any) => {
-        // prevents 
+        // prevents email and password to show up on URL
         event.preventDefault();
         
         // calls sign in via email
         SignInViaEmail(email, password);
+
     }
 
 

@@ -1,6 +1,7 @@
-import SignOut from '../firebase_hosting/SignOut'
+import SignOut from './firebase_hosting/SignOut'
 
 function AdminDashboard() {
+    
   return (
       <>  
       <h1>AdminDashboard</h1>

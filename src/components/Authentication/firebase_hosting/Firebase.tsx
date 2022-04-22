@@ -3,6 +3,7 @@ import firebaseConfig from "./firebaseConfig";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth, onAuthStateChanged } from "firebase/auth"; 
+import { useState } from "react";
 
 // Entry point between website and Firebase
 const fireBaseApp = initializeApp(firebaseConfig)
@@ -14,10 +15,11 @@ const analytics = getAnalytics(fireBaseApp);
 // See https://firebase.google.com/docs/auth/web/start#set_an_authentication_state_observer_and_get_user_data
 onAuthStateChanged(auth, (user) => {
     if (user){
-        alert("User is successfully logged in");
-
+        // user is successfully logged in
+        alert(`Successfully logged in!`);
     } else {
-        alert("User is successfully logged out");
+        // user is not logged in
+        alert(`Not logged in!`);
     }
 })
 

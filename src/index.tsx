@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import './styles/globals.scss';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import Landing from './screens/Landing';
 import Events from './screens/Events';
 import SignIn from './components/Authentication/SignIn';
