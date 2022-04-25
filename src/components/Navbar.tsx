@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import phLogo from '../assets/logo_rgb.png'
 import '../styles/navbar.scss'
-import { SocialIcon } from 'react-social-icons';
 
 function NavBar() {
   //React Hooks: useState, useEffect, useNavigation
@@ -65,13 +64,6 @@ function NavBar() {
             <a href="/">Community</a>
             <a href="/">Join Us</a>
           </div>
-					{/* <div className="socials_wrapper">
-						<SocialIcon url="https://www.facebook.com/ytechnz/" />
-						<SocialIcon url="https://www.instagram.com/ytechnz/" />
-					</div>	 */}
-					{/* <a href="/" className="button header__cta hide-for-mobile">
-						CTA button
-					</a> */}
         </nav>
         <div className={`header__menu ${handleFades()} has-fade`}>
           <a href="/">Home</a>

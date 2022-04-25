@@ -37,7 +37,6 @@ function Landing() {
                 <h1>YouTube Video</h1>
                 <YouTubeVideo src="https://www.youtube.com/watch?v=iy3VW4L0dAY" />
             </Section>
-
             
             <Footer/>
         </>

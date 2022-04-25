@@ -16,5 +16,4 @@ function Image(props: any) {
   return <img className="cust_image" alt="YTech NZ drive" src={output}/>
 }
 
-
 export default Image
