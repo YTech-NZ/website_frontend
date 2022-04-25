@@ -9,12 +9,25 @@
     flex-direction: row;
     justify-content: center;
 
+    &__submit {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: $font-sm;
+        color: $white;
+        transition: opacity 300ms ease-in-out;
+        opacity: 1;
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
 
         &__row {
             display: flex;
@@ -25,8 +38,6 @@
             .form_row {
                 padding: 1vw;
                 width: 100%;
-                margin-left: 1.2vw;
-                margin-right: 1.2vw;
                 input[type=text] {
                     margin: 0.25vw;
                     margin-left: 2vw;
@@ -46,7 +57,6 @@
             .form_row_message {
                 padding: 1vw;
                 width: 100%;
-                margin-left: 1.2vw;
                 margin-right: 1.2vw;
                 input[type=text] {
                     margin: 0.25vw;

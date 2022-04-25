@@ -30,6 +30,12 @@ function Contact() {
                         </div>
                         </form>
                     </div>
+
+                    <div className="contact__container">
+                    <a href="/" className="button contact__submit">
+                    Submit Query
+                    </a>
+                    </div>
         </Section>
     )
 }
