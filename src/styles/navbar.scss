@@ -83,6 +83,7 @@
     }
 
     &__links {
+        grid-column: 3;
         a {
             font-size: $font-nav;
             font-weight: 600;
@@ -91,7 +92,7 @@
             position: relative;
 
             &:not(:last-child){
-                margin-right: 32px;
+                margin-right: 70px;
             }
 
             &::before{

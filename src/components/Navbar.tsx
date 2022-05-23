@@ -51,16 +51,12 @@ function NavBar() {
             <span></span>
             <span></span>
           </div>
-          <div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
-            <a href="/">About Us</a>
-            <a href="/events">Events</a>
-          </div>
-
           <a href="/" className='header__logo'>
             <img src={phLogo} alt="logo" />
           </a>
-
-          <div className={`header__links hide-for-mobile header__links__right ${navElementToHighlight}`}>
+          <div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
+            <a href="/">About</a>
+            <a href="/events">Events</a>
             <a href="/">Community</a>
             <a href="/">Join Us</a>
           </div>
