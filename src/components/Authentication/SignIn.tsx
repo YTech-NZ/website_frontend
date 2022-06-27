@@ -43,14 +43,14 @@ function SignIn() {
                         name="email"
                         onChange={updateEmail}/>
                     </label>
-
+                    <br />
                     <label>Password: 
                         <input 
                         type="password" 
                         name="password"
                         onChange={updatePassword}/>
                     </label>
-
+                    <br />
                     <input type="submit"/>
 
                 </form>
