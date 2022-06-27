@@ -4,7 +4,7 @@ function AdminDashboard() {
     
   return (
       <>  
-      <h1>AdminDashboard</h1>
+      <h1>Admin Dashboard</h1>
       <button onClick={SignOut}>Sign out</button>
       </>
   )
