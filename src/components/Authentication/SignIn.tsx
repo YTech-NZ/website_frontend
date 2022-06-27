@@ -1,7 +1,9 @@
 import {useState} from 'react';
 
 import Section from '../../widgets/Section';
+import '../../styles/signin.scss';
 import SignInViaEmail from './firebase_hosting/SignInViaEmail';
+import { TextField } from '@material-ui/core';
 
 function SignIn() {
 
@@ -32,31 +34,36 @@ function SignIn() {
 
 
     return (
-        <div>
-            {/* unstyled form for sign in */}
-            <Section>
-                <h1>Sign In</h1> 
-                <form id="signIn" onSubmit={(e) => handleSubmit(e)}>
-                    <label>Email: 
-                        <input 
-                        type="email" 
-                        name="email"
-                        onChange={updateEmail}/>
-                    </label>
-                    <br />
-                    <label>Password: 
-                        <input 
-                        type="password" 
-                        name="password"
-                        onChange={updatePassword}/>
-                    </label>
-                    <br />
-                    <input type="submit"/>
+        <Section>
+            
+            <form id="signIn" onSubmit={(e) => handleSubmit(e)}>
+                <h1>Sign In</h1>
 
-                </form>
+                <TextField
+                    className='text-field'
+                    variant='outlined'
+                    type="email"
+                    label="Email"
+                    onChange={updateEmail}
+                />
+                
+                <br />
 
-            </Section>
-        </div>
+                <TextField
+                    className='text-field'
+                    variant='outlined'
+                    type="password"
+                    label="Password"
+                    onChange={updatePassword}
+                />
+
+                <br />
+                
+                <input type="submit" className='button'/>
+
+            </form>
+
+        </Section>
     )
 
 }
