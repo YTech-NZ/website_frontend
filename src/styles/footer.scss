@@ -13,7 +13,7 @@
         justify-content: center;
 
         img {
-            width: 18vw;
+            width: 30vw;
 
             @include breakpoint-down(medium) {
                 //changes styles depending on screen width
@@ -21,12 +21,22 @@
             }
         }
 
-        &__list {
-            padding-top: 3rem;
+        &__row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
 
-            > li {
-                text-align: center;
-                font-weight: bold;
+            img {
+                width: 3.5vw;
+                margin-top:3vw;
+                margin-left: 1vw;
+                margin-right: 1vw;
+                border-radius: 1vw;
+
+                @include breakpoint-down(medium) {
+                    width: 3.5vw;
+                }
             }
         }
     }
