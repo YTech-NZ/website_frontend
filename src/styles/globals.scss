@@ -1,10 +1,14 @@
 @import "variables";
 @import "mixins";
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 html {
     font-size: 100%;
     box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 *,
@@ -16,14 +20,14 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 300;
     line-height: 1.3;
     font-size: $font-med;
     color: $grayishBlue;
     overflow-x: hidden;
 
-    &.no-scroll{
+    &.no-scroll {
         overflow: hidden;
     }
 }
@@ -35,7 +39,7 @@ a:visited {
 }
 
 //Spacing
-.container{
+.container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -64,9 +68,10 @@ a:visited {
 }
 
 //Buttons
-button, .button {
+button,
+.button {
     padding: 0.875rem 2.1875rem;
-    background: linear-gradient(to right, $limeGreen, $brightCyan);
+    background: linear-gradient(to right, $limeGreen, $primary);
     border: 0;
     border-radius: 50px;
     cursor: pointer;
@@ -75,16 +80,16 @@ button, .button {
 }
 
 //Visibility
-.hide-for-mobile{
+.hide-for-mobile {
     //hide for tablet and mobile
-    @include breakpoint-down(medium){
+    @include breakpoint-down(medium) {
         display: none;
     }
 }
 
-.hide-for-desktop{
+.hide-for-desktop {
     //hide for desktop viewport widths
-    @include breakpoint-up(large){
+    @include breakpoint-up(large) {
         display: none;
     }
 }

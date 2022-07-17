@@ -29,8 +29,8 @@ function NavBar() {
 
   const currentRoute = () => {
 	switch(window.location.pathname){
-		case '/aboutus':
-			return 'aboutus_active';
+		case '/about':
+			return 'about_active';
 		case '/events':
 		  return 'events_active';
 		case '/community':
@@ -56,7 +56,7 @@ function NavBar() {
             <img src={phLogo} alt="logo" />
           </a>
           <div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
-            <Link to="/aboutus">About</Link>
+            <Link to="/about">About</Link>
             <Link to="/events">Events</Link>
             <Link to="/community">Community</Link>
             <Link to="/joinus">Join Us</Link>
