@@ -17,17 +17,17 @@ function Footer() {
                     <img src={LOGO_BLACK} alt="YTech NZ logo black"/>
                     <div className="footer__container__row">
                         <div>
-                            <a href={Properties.linkedinURL} target="_blank">
+                            <a href={Properties.linkedinURL} target="_blank" rel="noreferrer">
                                 <img src={LINKEDIN} alt="LinkedIn logo"/>
                             </a>
                         </div>
                         <div>
-                            <a href={Properties.facebookURL} target="_blank"> 
+                            <a href={Properties.facebookURL} target="_blank" rel="noreferrer"> 
                                 <img src={FACEBOOK} alt="Facebook logo"/>
                             </a>
                         </div>
                         <div>
-                            <a href={Properties.instagramURL} target="_blank"> 
+                            <a href={Properties.instagramURL} target="_blank" rel="noreferrer"> 
                                 <img src={INSTAGRAM} alt="Instagram logo"/>
                             </a>
                         </div>
