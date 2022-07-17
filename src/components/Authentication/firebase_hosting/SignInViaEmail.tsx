@@ -2,6 +2,7 @@ import {auth} from "./Firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 function SignInViaEmail(email: string, password:string){
+    // this function handles the Firebase's sign in via email method, and error handling.
         
     signInWithEmailAndPassword(auth, email, password)
     // when user signs in successfully

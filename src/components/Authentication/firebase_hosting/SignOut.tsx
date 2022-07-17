@@ -2,14 +2,15 @@ import {auth} from "./Firebase";
 import { signOut } from "firebase/auth";
 
 function SignOut() {
+    // this function signs users out 
+
     signOut(auth)
     .then(() => {
         // Sign-out successful.
         
     }).catch((error) => {
-        // if sign out was unsuccessful
-        const errorCode = error.code;
-        const errorMessage = error.Message;
+        // if sign out was unsuccessful.
+        alert("Sign out was unsuccessful");
     });
 }
 

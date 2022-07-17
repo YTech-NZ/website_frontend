@@ -5,6 +5,7 @@ import { auth } from './firebase_hosting/Firebase';
 import SignIn from './SignIn';
 
 function Admin() {
+    // this function takes care of sign in status. sign in status (isSignedIn) determines what is shown on /admin page.
 
     // tracking signed in status
     const [isSignedIn, setSignInStatus] = useState(false);
@@ -21,8 +22,8 @@ function Admin() {
         }
     })
 
-    // prompts sign in if not logged in
-    return (isSignedIn ? <AdminDashboard /> : <SignIn />)
+    // prompts sign in if not logged in.
+    return (isSignedIn ? <AdminDashboard /> : <SignIn />) // (tertiary operator)
 }
 
 export default Admin
