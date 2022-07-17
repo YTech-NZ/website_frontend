@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Landing from './screens/Landing';
 import Events from './screens/Events';
-import Admin from './components/Authentication/Admin';
+import Admin from './screens/Admin';
 
 ReactDOM.render(
   <BrowserRouter>

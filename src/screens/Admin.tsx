@@ -1,8 +1,8 @@
 import { onAuthStateChanged } from 'firebase/auth';
 import { useState } from 'react'
-import AdminDashboard from './AdminDashboard';
-import { auth } from './firebase_hosting/Firebase';
-import SignIn from './SignIn';
+import AdminDashboard from '../components/authentication/AdminDashboard';
+import { auth } from '../components/authentication/firebase_hosting/Firebase';
+import SignIn from '../components/authentication/SignIn';
 
 function Admin() {
     // this function takes care of sign in status. sign in status (isSignedIn) determines what is shown on /admin page.
