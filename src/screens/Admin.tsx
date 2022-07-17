@@ -14,7 +14,6 @@ function Admin() {
     // See https://firebase.google.com/docs/auth/web/start#set_an_authentication_state_observer_and_get_user_data
     onAuthStateChanged(auth, (user) => {
         if (user){
-            // user is successfully logged in
             setSignInStatus(true);
         } else {
             setSignInStatus(false);

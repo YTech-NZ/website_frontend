@@ -10,7 +10,7 @@ function SignInViaEmail(email: string, password:string){
         const user = userCredential.user;
     })
 
-    // when user is not successful
+    // unsuccessful
     .catch((error) => {
         const errorCode = error.code;
 

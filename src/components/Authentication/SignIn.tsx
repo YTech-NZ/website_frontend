@@ -12,23 +12,20 @@ function SignIn() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    // updates email state whenever email field changes
     const updateEmail = (event: any) => {
         setEmail(event.target.value)
     }
 
-    // updates password state whenever password field changes
     const updatePassword = (event: any) => {
         setPassword(event.target.value)
     }
 
-    // sends details to firebase sign in method
     const handleSubmit = (event: any) => {
         // prevents email and password to show up on URL
         event.preventDefault();
-
+        
+        // sends details to firebase sign in method
         SignInViaEmail(email, password);
-
     }
 
 
