@@ -4,32 +4,51 @@
 .header {
     //Header animations
     //if header has class of open as well
-    &.open{
-        .header__toggle{
+    &.open {
+        .header__toggle {
             > span:first-child {
-                transform: rotate(45deg)
+                transform: rotate(45deg);
             }
-    
+
             > span:last-child {
                 transform: rotate(-45deg);
             }
-    
+
             > span:nth-child(2) {
-                opacity: 0;                
+                opacity: 0;
             }
         }
     }
 
-    nav{
+    nav {
         position: relative;
         background-color: $white;
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        div {
+            align-self: end;
+            padding-bottom: 10px;
+            font-size: $font-nav;
+            a {
+                min-width: fit-content;
+                // background-color: red;
+            }
+        }
+
+        // left links of logo should be right aligned
+        div:nth-child(2) {
+            justify-self: end;
+        }
     }
 
     &__logo {
+        justify-self: left;
+        margin-left: 1rem;
         img {
-            height: 1.375rem;
+            height: 3.5rem;
             width: auto;
         }
     }
@@ -55,47 +74,47 @@
         margin-top: 1.5rem;
         position: absolute;
         width: calc(100% - 3rem);
-        left: 50%;                      //centering a position absolute
-        transform: translateX(-50%);       //centering a position absolute
+        left: 50%; //centering a position absolute
+        transform: translateX(-50%); //centering a position absolute
         background: $white;
         padding: 1.625rem;
         border-radius: 5px;
-
-        > a {
-            display: block;
-            padding: 0.625rem;
-            text-align: center;
-            color: $darkBlue;
-        }
     }
 
     &__links {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        grid-column: 3;
         a {
-            font-size: $font-sm;
-            color: $grayishBlue;
+            padding-top: 20px;
+            font-size: $font-nav;
+            font-weight: 600;
+            color: black;
             transition: color 300ms ease-in-out;
             position: relative;
 
-            &:not(:last-child){
-                margin-right: 32px;
+            &:not(:last-child) {
+                margin-right: 70px;
             }
 
-            &::before{
-                content: '';
+            &::before {
+                content: "";
                 display: block;
-                height: 5px;
+                height: 3px;
                 position: absolute;
                 left: 0;
                 right: 0;
-                bottom: -30px;
-                background: linear-gradient(to right, $limeGreen, $brightCyan);
+                bottom: -10px;
+                background: linear-gradient(to right, $limeGreen, $primary);
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;
+                border-radius: 2px;
             }
 
-            &:hover{
+            &:hover {
                 color: $darkBlue;
-                &::before{
+                &::before {
                     opacity: 1;
                 }
             }
@@ -108,17 +127,39 @@
         transition: opacity 300ms ease-in-out;
         opacity: 1;
 
-        &:hover{
+        &:hover {
             opacity: 0.75;
         }
     }
 
-    .overlay{
+    .overlay {
         background-image: linear-gradient($darkBlue, transparent);
         position: fixed;
         bottom: 0;
         top: 0;
         left: 0;
         right: 0;
+    }
+}
+
+// change color based on page loaded
+.about_active {
+    a:nth-child(1) {
+        color: $primary;
+    }
+}
+.events_active {
+    a:nth-child(2) {
+        color: $primary;
+    }
+}
+.community_active {
+    a:nth-child(3) {
+        color: $primary;
+    }
+}
+.joinus_active {
+    a:nth-child(4) {
+        color: $primary;
     }
 }
