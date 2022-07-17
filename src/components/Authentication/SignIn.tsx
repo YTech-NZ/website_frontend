@@ -26,8 +26,7 @@ function SignIn() {
     const handleSubmit = (event: any) => {
         // prevents email and password to show up on URL
         event.preventDefault();
-        
-        // calls sign in via email
+
         SignInViaEmail(email, password);
 
     }

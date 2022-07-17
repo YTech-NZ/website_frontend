@@ -9,7 +9,6 @@ function SignOut() {
         // Sign-out successful.
         
     }).catch((error) => {
-        // if sign out was unsuccessful.
         alert("Sign out was unsuccessful");
     });
 }

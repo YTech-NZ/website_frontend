@@ -7,7 +7,7 @@ import SignIn from '../components/authentication/SignIn';
 function Admin() {
     // this function takes care of sign in status. sign in status (isSignedIn) determines what is shown on /admin page.
 
-    // tracking signed in status
+    // tracking sign in status
     const [isSignedIn, setSignInStatus] = useState(false);
 
     // This observer gets called whenever the user's sign-in state changes (ie. whenever someone logs in or logs out)
@@ -17,13 +17,12 @@ function Admin() {
             // user is successfully logged in
             setSignInStatus(true);
         } else {
-            // user is not logged in
             setSignInStatus(false);
         }
     })
 
     // prompts sign in if not logged in.
-    return (isSignedIn ? <AdminDashboard /> : <SignIn />) // (tertiary operator)
+    return (isSignedIn ? <AdminDashboard /> : <SignIn />)
 }
 
 export default Admin
