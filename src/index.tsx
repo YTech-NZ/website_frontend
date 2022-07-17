@@ -9,7 +9,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/aboutus" element={<Landing />} />
-      <Route path="events" element={<Events />} />
+      <Route path="/events" element={<Events />} />
       <Route path="/community" element={<Landing />} />
       <Route path="/joinus" element={<Landing />} />
     </Routes>

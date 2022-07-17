@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import phLogo from '../assets/logo_rgb.png'
 import '../styles/navbar.scss'
 
@@ -55,19 +56,19 @@ function NavBar() {
             <img src={phLogo} alt="logo" />
           </a>
           <div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
-            <a href="/">About</a>
-            <a href="/events">Events</a>
-            <a href="/">Community</a>
-            <a href="/">Join Us</a>
+            <Link to="/aboutus">About</Link>
+            <Link to="/events">Events</Link>
+            <Link to="/community">Community</Link>
+            <Link to="/joinus">Join Us</Link>
           </div>
         </nav>
-        <div className={`header__menu ${handleFades()} has-fade`}>
+        {/* <div className={`header__menu ${handleFades()} has-fade`}>
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Contact</a>
           <a href="/">Blog</a>
           <a href="/">Careers</a>
-        </div>
+        </div> */}
       </header>
     </>
   );

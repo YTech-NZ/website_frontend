@@ -31,6 +31,11 @@
         div {
             align-self: end;
             padding-bottom: 10px;
+            font-size: $font-nav;
+            a {
+                min-width: fit-content;
+                // background-color: red;
+            }
         }
 
         // left links of logo should be right aligned
@@ -40,9 +45,10 @@
     }
 
     &__logo {
-        justify-self: center;
+        justify-self: left;
+        margin-left: 1rem;
         img {
-            height: 6rem;
+            height: 3.5rem;
             width: auto;
         }
     }
