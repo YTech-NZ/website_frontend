@@ -6,7 +6,7 @@ import SignInViaEmail from './firebase_hosting/SignInViaEmail';
 import { TextField } from '@material-ui/core';
 
 function SignIn() {
-    // this function takes care of the sign in page which includes the form 
+    // this function takes care of the sign-in page which includes the form 
 
     // declaring state for email and password
     const [email, setEmail] = useState("");
