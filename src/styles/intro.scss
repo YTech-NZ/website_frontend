@@ -1,0 +1,21 @@
+@import "variables";
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        font-size: $font-lg;
+        font-weight: bold;
+    }
+
+    &__text {
+        padding-top: 20px;
+        text-align: center;
+        color: black;
+        font-weight: 400;
+        width: 80%;
+    }
+}
