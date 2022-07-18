@@ -1,7 +1,7 @@
 import Footer from '../components/Footer';
 import NavBar from '../components/Navbar';
 import Splash from '../components/Splash';
-import Contact from '../components/Contact';
+// import Contact from '../components/Contact';
 import Section from '../widgets/Section';
 import Image from '../widgets/Image';
 import YouTubeVideo from "../widgets/YoutubeVideo";
@@ -38,7 +38,7 @@ function Landing() {
             </Section>
 
             {/*Contact Us*/}
-            <Contact />                   
+            {/* <Contact /> */}
             
             
             <Footer/>

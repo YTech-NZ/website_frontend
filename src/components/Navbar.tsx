@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import phLogo from '../assets/logo_black.jpg'
+import { Link } from 'react-router-dom';
+import phLogo from '../assets/logo_rgb.png'
 import '../styles/navbar.scss'
 
 function NavBar() {
@@ -26,37 +27,48 @@ function NavBar() {
     return isMenuOpen ? "fade-in" : "fade-out"
   }
 
+  const currentRoute = () => {
+	switch(window.location.pathname){
+		case '/about':
+			return 'about_active';
+		case '/events':
+		  return 'events_active';
+		case '/community':
+		  return 'community_active';
+		case '/joinus':
+		  return 'joinus_active';
+	  }
+  }
+
+  let navElementToHighlight = currentRoute();
+
   return (
     <>
       <header className={`header ${fetchMenuClass()}`}>
         <div className={`overlay ${handleFades()} has-fade`}></div>
-        <nav className='flex flex-jc-sb flex-ai-c container'>
-          <a href="/" className='header__logo'>
-            <img src={phLogo} alt="logo" />
-          </a>
+        <nav className='grid container'>
           <div className='header__toggle hide-for-desktop' onClick={toggleMenu}>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <div className="header__links hide-for-mobile">
-            <a href="/">Home</a>
-            <a href="/">About</a>
-            <a href="/">Contact</a>
-            <a href="/">Blog</a>
-            <a href="/">Careers</a>
+          <a href="/" className='header__logo'>
+            <img src={phLogo} alt="logo" />
+          </a>
+          <div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
+            <Link to="/about">About</Link>
+            <Link to="/events">Events</Link>
+            <Link to="/community">Community</Link>
+            <Link to="/joinus">Join Us</Link>
           </div>
-          {/*<a href="/" className="button header__cta hide-for-mobile">
-            CTA button
-  </a>*/}
         </nav>
-        <div className={`header__menu ${handleFades()} has-fade`}>
+        {/* <div className={`header__menu ${handleFades()} has-fade`}>
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Contact</a>
           <a href="/">Blog</a>
           <a href="/">Careers</a>
-        </div>
+        </div> */}
       </header>
     </>
   );
