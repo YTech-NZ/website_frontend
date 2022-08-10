@@ -1,0 +1,45 @@
+@import "variables";
+
+#values {
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+
+    #pillars {
+        display: flex;
+        justify-content: space-evenly;
+
+        .pillar {
+            margin: 2%; 
+            margin-top: 3%;
+            color: $white;
+            border-radius: 40px;
+
+            img {
+                margin: 10%;
+                border-radius: 50%;
+                width: 60%;
+            }
+
+            h2 {
+                max-width: 70%;
+                margin: auto;
+                margin-bottom: 1.5em;
+            }
+
+            &#pink-pillar {
+                background-color: #E01E90;
+            }
+
+            &#blue-pillar {
+                background-color: #0191B4;
+            }
+
+            &#yellow-pillar {
+                background-color: #FBD603;
+            }
+        }
+    }
+}
