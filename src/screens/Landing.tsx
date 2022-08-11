@@ -5,6 +5,7 @@ import Splash from '../components/Splash';
 import Section from '../widgets/Section';
 import Image from '../widgets/Image';
 import YouTubeVideo from "../widgets/YoutubeVideo";
+import Intro from '../components/Intro';
 
 function Landing() {
     return (
@@ -16,9 +17,7 @@ function Landing() {
             <Splash />
 
             {/*White section with green text*/}
-            <Section>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, numquam magni tempore sequi sed nisi nihil vero eum ipsum eligendi autem nulla dicta est. Pariatur optio quas impedit voluptates eveniet!</div>
-            </Section>
+            <Intro />
 
             {/*Green section with white text*/}
             <Section inverse>
