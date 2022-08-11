@@ -37,8 +37,7 @@ function Landing() {
             </Section>
 
             {/*Contact Us*/}
-            {/* <Contact /> */}
-            
+            {/* <Contact /> */} 
             
             <Footer/>
         </>
