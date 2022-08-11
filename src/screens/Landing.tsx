@@ -6,7 +6,6 @@ import Section from '../widgets/Section';
 import Image from '../widgets/Image';
 import YouTubeVideo from "../widgets/YoutubeVideo";
 import Intro from '../components/Intro';
-import Events from '../components/Events';
 
 function Landing() {
     return (
@@ -25,9 +24,6 @@ function Landing() {
                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, numquam magni tempore sequi sed nisi nihil vero eum ipsum eligendi autem nulla dicta est. Pariatur optio quas impedit voluptates eveniet!</div>
             </Section>
 
-            {/* Events */}
-            <Events />
-
             {/*Image*/}
             <Section >
                 <h1>Image</h1>
@@ -41,8 +37,7 @@ function Landing() {
             </Section>
 
             {/*Contact Us*/}
-            {/* <Contact /> */}
-            
+            {/* <Contact /> */} 
             
             <Footer/>
         </>
