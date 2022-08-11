@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA_gU2Y8sM5ZFma18CUfqYgMsmMru5YbaQ",
-  authDomain: "ytech-website.firebaseapp.com",
-  projectId: "ytech-website",
-  storageBucket: "ytech-website.appspot.com",
-  messagingSenderId: "711044735603",
-  appId: "1:711044735603:web:1af1bdac21481b16cc8006",
-  measurementId: "G-R2K408PF1M"
+  apiKey: "AIzaSyDyH9rXWwSL3iA6i-MufTbzNtMB703XCFw",
+  authDomain: "test-b3382.firebaseapp.com",
+  projectId: "test-b3382",
+  storageBucket: "test-b3382.appspot.com",
+  messagingSenderId: "998658113627",
+  appId: "1:998658113627:web:af6531d2680ba665733f7e",
+  measurementId: "G-7G2XN1FHDP"
 };
 
 export default firebaseConfig;
