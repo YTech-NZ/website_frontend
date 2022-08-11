@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { collection, getDocs, addDoc } from "firebase/firestore";
 import firebaseConfig from '../components/auth/firebase_hosting/firebaseConfig'
+import NavBar from '../components/Navbar'
 
 import React, { useEffect, useState } from 'react';
 
@@ -30,6 +31,7 @@ function Events() {
 
   return (
       <>
+        <NavBar />
         {events?.slice(1).map((event) => {
           return(
             <>
