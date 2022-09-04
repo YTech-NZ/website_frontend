@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SlideImage = styled.img`
-  width: 400px;
+  width: 100vw;
   height: 300px;
   object-fit: cover;
 `;

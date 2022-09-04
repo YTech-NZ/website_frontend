@@ -1,21 +1,41 @@
-.splash{
-    width: 100vw;
-    height: 100vh;
-    background-color: grey;
-    color: white;
-    text-align: center;
-}
+//Import Statements
 
-.rightArrow {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    font-size: 2rem;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+
+.wrapper {
+    display: flex !important;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
   }
   
-  .leftArrow {
+  .sliderImg {
+    box-sizing: border-box;
+    height: 300px;
+    width: 400px;
+    padding: 0px 2vw;
+    object-fit: cover;
+  }
+  
+  .imgTitle {
+    font-weight: 900;
+  }
+  
+  .slides .slick-prev,
+  .slides .slick-next {
     position: absolute;
     top: 50%;
-    left: 20px;
-    font-size: 2rem;
+    z-index: 1;
+    background-color: black;
+  }
+  
+  .slides .slick-prev {
+    left: 5%;
+  }
+  
+  .slides .slick-next {
+    right: 5%;
   }
