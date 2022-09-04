@@ -49,7 +49,6 @@ class Splash extends Component {
                 src={image.url}
                 alt={image.alt}
               />
-              <p>{image.name}</p>
             </div>
           );
         })}
