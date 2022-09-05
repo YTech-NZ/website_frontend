@@ -1,15 +1,9 @@
 import "../styles/youtubeVideo.scss";
+import VideoUrlConverter from "../util/VideoLinkConverter";
 
-function YouTubeVideo(props:any){
-  
-  var url = props.src;
-  
-  //  Split url to get video's embedded ID. 
-  var parts = url.split('=');
-  var vid_id = parts[parts.length-1];
-    
+function YouTubeVideo(props:any){    
   return <iframe
-    src = {`https://www.youtube.com/embed/${vid_id}`}
+    src = {VideoUrlConverter(props.src)}
     //className="cust_video"
     width = "720"
     height = "400"

@@ -7,7 +7,7 @@ function SignInViaEmail(email: string, password:string){
     signInWithEmailAndPassword(auth, email, password)
     // when user signs in successfully
     .then((userCredential) => {
-        const user = userCredential.user;
+        // const user = userCredential.user;
     })
 
     // unsuccessful
