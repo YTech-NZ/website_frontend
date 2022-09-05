@@ -1,0 +1,42 @@
+@import "variables";
+
+.sideSeg {
+    display: flex;
+    flex-direction: row;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .title {
+            font-size: $font-lg;
+            font-weight: 600;
+            padding-bottom: 1rem;
+        }
+    }
+
+    &.left {
+        //media is left
+        .content {
+            text-align: right;
+            padding-left: 5rem;
+        }
+
+        .title {
+            padding-left: 5rem;
+        }
+    }
+
+    &.right {
+        //media is right
+        .media {
+            order: 2;
+        }
+
+        .content {
+            order: 0;
+            padding-right: 5rem;
+        }
+    }
+}
