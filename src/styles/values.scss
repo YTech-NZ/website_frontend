@@ -16,29 +16,33 @@
             margin-top: 3%;
             color: $white;
             border-radius: 40px;
+            width: 30%;
 
             img {
                 margin: 10%;
                 border-radius: 50%;
-                width: 60%;
+                width: 15rem;
+                height: 15rem;
+                object-fit: cover;
             }
 
             h2 {
                 max-width: 70%;
                 margin: auto;
                 margin-bottom: 1.5em;
+                color: black;
             }
 
             &#pink-pillar {
-                background-color: #E01E90;
+                background-color: #e983b9;
             }
 
             &#blue-pillar {
-                background-color: #0191B4;
+                background-color: #63cee2;
             }
 
             &#yellow-pillar {
-                background-color: #FBD603;
+                background-color: #ffcc3a;
             }
         }
     }
