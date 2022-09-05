@@ -20,8 +20,13 @@ function Admin() {
         }
     })
 
+
     // prompts sign in if not logged in.
-    return (isSignedIn ? <AdminDashboard /> : <SignIn />)
+    return (
+        <>
+            isSignedIn ? <AdminDashboard /> : <SignIn />
+        </>
+    )
 }
 
 export default Admin
