@@ -12,17 +12,17 @@ function Values() {
 
             <div id="pillars">
                 <div className="pillar" id="pink-pillar">
-                    <Image src="https://drive.google.com/file/d/1uMAYwP44W9pNQkc5n0JXfNFn3Oj5Q0Kd/view?usp=sharing"/>
+                    <Image src="https://drive.google.com/file/d/1A5TADxFNqcwnTvXxGsSdQsvsO7im98Kr/view?usp=sharing"/>
                     <h2>Growth</h2>
                 </div>
 
                 <div className="pillar" id="blue-pillar">
-                    <Image src="https://drive.google.com/file/d/1UkkhT1jQuDLfqecq5DPFHwj3SCBbTinJ/view?usp=sharing" />
+                    <Image src="https://drive.google.com/file/d/1gYdy4k5t4kGMUbD9C36JEpn-ZoH-dFCD/view?usp=sharing" />
                     <h2>Youth Powered</h2>
                 </div>
 
                 <div className="pillar" id="yellow-pillar">
-                    <Image src="https://drive.google.com/file/d/1OwjqnDoiIJL2WSz0Bt4lB98w4xKWDECr/view?usp=sharing" />
+                    <Image src="https://drive.google.com/file/d/1Gtf9t6geuvIrYAfEWwwlGzsrHy5so-r4/view?usp=sharing" />
                     <h2>Community Focused</h2>
                 </div>
 
