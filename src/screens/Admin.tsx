@@ -23,7 +23,8 @@ function Admin() {
 
     // prompts sign in if not logged in.
     return (
-        isSignedIn ? <AdminDashboard /> : <SignIn />
+        <AdminDashboard />
+        // isSignedIn ? <AdminDashboard /> : <SignIn />
     )
 }
 

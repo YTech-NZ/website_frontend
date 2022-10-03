@@ -46,11 +46,11 @@ function Events() {
         <NavBar />
         {events?.slice(1).map((event) => {
           return(
-            <>
+            <ol key={event.title}>
               <h1>{event.title}</h1>
               <p>{event.description}</p>
               <img width="400px" src={event.image} />
-            </>
+            </ol>
           )
         })}
       </>

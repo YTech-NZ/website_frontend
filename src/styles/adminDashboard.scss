@@ -1,0 +1,40 @@
+.float_container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float_child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid black;
+}  
+
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+.event {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+    transition: color 300ms;
+}
+
+.event:hover {
+    cursor: pointer;
+    color: rgb(45, 231, 45);
+}
+
+.cross {
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(253, 69, 69);
+    transition: color 300ms;
+}
+
+.cross:hover {
+    cursor: pointer;
+    color: red;
+}
