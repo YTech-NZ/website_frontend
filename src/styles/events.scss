@@ -1,0 +1,83 @@
+@import "mixins";
+
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+.events_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0px auto;
+    column-gap: 1em;
+
+    @include breakpoint-down("medium") {
+        grid-template-columns: 1fr;
+        row-gap: 2em;
+    }
+}
+
+.event_item {
+    background-color: white;
+    padding-bottom: 0.5em;
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        height: 2.4em;
+        border-bottom: 1px solid ;
+    }
+
+    // Change the height of the description text box
+    > p {
+        font-size: 0.9em;
+        color: rgb(51, 51, 51);
+        height: 16em;
+        
+        @include breakpoint-down("medium") {
+            height: 10em;
+            font-size: 1.2em;
+        }
+    }
+
+    h1,p{
+        padding: 0px 0.3em;
+    }
+
+    .attendance_container {
+        margin-top: 1.5em;
+
+        > * {
+            vertical-align: middle;
+            margin-right: 0.1em;
+        }
+
+        .event_stats {
+            display: inline-block;
+
+            > p {
+                font-weight: bold;
+                color: black;
+                margin: 0px;
+            }
+
+            .gender_percentage {
+                > * {
+                    display: inline-block;
+                    margin: 0px;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .attendance_icon {
+        display: inline-block;
+        font-size: 2.7em;
+        color: rgb(82, 82, 82);
+    }
+}
+

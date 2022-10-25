@@ -1,8 +1,10 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, setDoc, doc } from "firebase/firestore";
-import { collection, getDocs, addDoc, getDoc } from "firebase/firestore";
+import { getFirestore, doc } from "firebase/firestore";
+import { collection, getDocs, getDoc } from "firebase/firestore";
+import {BsFillPeopleFill} from 'react-icons/bs';
 import firebaseConfig from '../components/auth/firebase_hosting/firebaseConfig'
 import NavBar from '../components/Navbar'
+import '../styles/events.scss'
 
 import React, { useEffect, useState } from 'react';
 
@@ -44,15 +46,27 @@ function Events() {
   return (
       <>
         <NavBar />
-        {events?.slice(1).map((event) => {
-          return(
-            <ol key={event.title}>
-              <h1>{event.title}</h1>
-              <p>{event.description}</p>
-              <img width="400px" src={event.image} />
-            </ol>
-          )
-        })}
+        <div className="events_container">
+          {events?.slice(1).map((event) => {
+            return(
+              <div className="event_item">
+                <img src={event.image} alt={event.title}/>
+                <h1>{event.title}</h1>
+                <p>{event.description}</p>
+                <div className="attendance_container">
+                  <BsFillPeopleFill className="attendance_icon"/>
+                  <div className="event_stats">
+                    <p>300 Students</p>
+                    <div className="gender_percentage">
+                      <p>50% Male</p>
+                      <p>50% Female</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
+        </div>
       </>
     )
 }
