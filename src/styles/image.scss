@@ -1,7 +1,7 @@
 @import "variables";
 
 .cust-image {
-    width: calc(50vw - #{$section-padding});
+    width: calc(50vw - #{$section-padding} - 3vw);
     height: auto;
     border-radius: $media-border-radius;
 }

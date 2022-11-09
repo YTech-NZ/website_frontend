@@ -2,6 +2,6 @@
 
 iframe.custVideo {
   border: none;
-  width: calc(50vw - #{$section-padding});
+  width: calc(50vw - #{$section-padding} - 3vw);
   border-radius: $media-border-radius;
 }
