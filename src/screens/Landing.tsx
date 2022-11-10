@@ -7,6 +7,7 @@ import SideSegment from '../widgets/SideSegment';
 import Image from '../widgets/Image';
 import YouTubeVideo from "../widgets/YoutubeVideo";
 import Intro from '../components/Intro';
+import Values from '../components/Values';
 
 function Landing() {
     return (
@@ -35,7 +36,7 @@ function Landing() {
                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, numquam magni tempore sequi sed nisi nihil vero eum ipsum eligendi autem nulla dicta est. Pariatur optio quas impedit voluptates eveniet!</div>
             </Section>
 
-
+            <Values />
 
             {/*Image*/}
             {/* <Section >
