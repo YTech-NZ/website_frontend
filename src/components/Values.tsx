@@ -11,17 +11,17 @@ function Values() {
             {/* TODO: Replace placeholder images to real images, cropped into a square.*/}
 
             <div id="pillars">
-                <div className="pillar" id="pink-pillar">
+                <div className="pillar pink-pillar">
                     <Image src="https://drive.google.com/file/d/1A5TADxFNqcwnTvXxGsSdQsvsO7im98Kr/view?usp=sharing"/>
                     <h2>Growth</h2>
                 </div>
 
-                <div className="pillar" id="blue-pillar">
+                <div className="pillar blue-pillar">
                     <Image src="https://drive.google.com/file/d/1gYdy4k5t4kGMUbD9C36JEpn-ZoH-dFCD/view?usp=sharing" />
                     <h2>Youth Powered</h2>
                 </div>
 
-                <div className="pillar" id="yellow-pillar">
+                <div className="pillar yellow-pillar">
                     <Image src="https://drive.google.com/file/d/1Gtf9t6geuvIrYAfEWwwlGzsrHy5so-r4/view?usp=sharing" />
                     <h2>Community Focused</h2>
                 </div>
