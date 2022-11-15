@@ -1,5 +1,7 @@
+@import "variables";
+
 .section {
-    padding: 4rem 8vw;
+    padding: $section-padding $section-padding;
     width: 100vw;
     background-color: white;
     color: #00A888;

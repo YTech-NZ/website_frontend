@@ -1,0 +1,49 @@
+@import "variables";
+
+#values {
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+
+    #pillars {
+        display: flex;
+        justify-content: space-evenly;
+
+        .pillar {
+            margin: 2%; 
+            margin-top: 3%;
+            color: $white;
+            border-radius: 40px;
+            width: 30%;
+
+            img {
+                margin: 10%;
+                border-radius: 50%;
+                width: 15rem;
+                height: 15rem;
+                object-fit: cover;
+            }
+
+            h2 {
+                max-width: 70%;
+                margin: auto;
+                margin-bottom: 1.5em;
+                color: black;
+            }
+
+            &.pink{
+                background-color: #e983b9;
+            }
+
+            &.blue {
+                background-color: #63cee2;
+            }
+
+            &.yellow {
+                background-color: #ffcc3a;
+            }
+        }
+    }
+}
