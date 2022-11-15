@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SlideImage, StyledSlider } from "./SlideImage";
+import LEFT_ARROW from "../assets/left_arrow.png"
 
 import {
   FaChevronRight,
@@ -20,14 +21,19 @@ const Slider = ({ slides }: {slides:any}) => {
 
   return (
     <StyledSlider>
-      <FaChevronLeft
+      {/* <FaChevronLeft
         className="left-arrow"
         onClick={prevSlide}
-      />
-      <FaChevronRight
+        
+      /> */}
+
+    <img src={LEFT_ARROW} className="left-arrow" alt="left-arrow"
+     onClick={prevSlide}/>
+
+      {/* <FaChevronRight
         className="right-arrow"
         onClick={nextSlide}
-      />
+      /> */}
       {slides.map((slide: { image: string | undefined; }, index: React.Key | null | undefined) => {
         return (
           <div key={index}>
