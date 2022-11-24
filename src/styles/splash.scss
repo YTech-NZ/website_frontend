@@ -5,41 +5,16 @@
 //Declarations
 $assetPath :"../assets";
 
-.wrapper {
-    display: flex !important;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    position: relative;
-  }
-  
-  .sliderImg {
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
-    padding: 0px 2vw;
-    object-fit: cover;
-  }
-  
-  .imgTitle {
-    font-weight: 900;
-  }
-  
-  .slides .slick-prev,
-  .slides .slick-next {
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    background-color: url(#{$assetPath}/left_arrow.png) ;
-    //background-color: transparent;
-  }
-  
-  .slides .slick-prev {
-    left: 5%;
-    background-color: transparent;
-  }
-  
-  .slides .slick-next {
-    right: 5%;
-  }
+.rightArrow {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  font-size: 5rem;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 40%;
+  left: 20px;    
+  font-size: 5rem;
+}

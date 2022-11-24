@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SlideImage = styled.img`
   width: 100vw;
-  height: 300px;
+  height: 800px;
   object-fit: cover;
 `;
 
