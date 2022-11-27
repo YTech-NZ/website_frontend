@@ -1,6 +1,12 @@
 import ImageUrlConverter from "../util/ImageLinkConverter";
 
-const YtechTeam:Object[] = [
+type TeamMember = {
+   name: string;
+   circlePhotoUrl: string,
+   squarePhotoUrl: string
+}
+
+const YtechTeam:TeamMember[] = [
 {
     name: "Edwina Mistry",
     circlePhotoUrl: ImageUrlConverter("https://drive.google.com/file/d/1fZ80iMyl6R7nq03XpKaoqjsPpatm4enr/view?usp=sharing"),
