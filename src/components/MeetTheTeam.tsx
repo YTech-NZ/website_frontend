@@ -1,4 +1,3 @@
-import React from 'react'
 import YtechTeam from '../data/YtechTeam'
 import Slider from './Slider'
 
@@ -11,8 +10,6 @@ function MeetTheTeam() {
       image: member.circlePhotoUrl
     });
   });
-
-
 
   return (
     <>
