@@ -1,7 +1,20 @@
-.splash{
-    width: 100vw;
-    height: 100vh;
-    background-color: grey;
-    color: white;
-    text-align: center;
+//Import Statements
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+
+//Declarations
+$assetPath :"../assets";
+
+.rightArrow {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  font-size: 5rem;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 40%;
+  left: 20px;    
+  font-size: 5rem;
 }
