@@ -37,7 +37,9 @@ function Landing() {
                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, numquam magni tempore sequi sed nisi nihil vero eum ipsum eligendi autem nulla dicta est. Pariatur optio quas impedit voluptates eveniet!</div>
             </Section>
             
-            <MeetTheTeam />
+            <Section inverse>
+                <MeetTheTeam />
+            </Section>
 
             <Values />
 
