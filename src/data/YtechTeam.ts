@@ -1,12 +1,7 @@
 import ImageUrlConverter from "../util/ImageLinkConverter";
+import { TeamMember } from "../types/TeamMember";
 
-type TeamMember = {
-   name: string;
-   circlePhotoUrl: string,
-   squarePhotoUrl: string
-}
-
-const YtechTeam:TeamMember[] = [
+const YtechTeam:(TeamMember | undefined)[] = [
 {
     name: "Edwina Mistry",
     circlePhotoUrl: ImageUrlConverter("https://drive.google.com/file/d/1fZ80iMyl6R7nq03XpKaoqjsPpatm4enr/view?usp=sharing"),
@@ -70,7 +65,7 @@ const YtechTeam:TeamMember[] = [
  {
     name: "Liz Kuschel Young",
     circlePhotoUrl: ImageUrlConverter("https://drive.google.com/file/d/1Q99gDeMGVC4jjqUCbL8tz1uNBUHnDlak/view?usp=share_link"),
-    squarePhotoUrl: ImageUrlConverter("https://drive.google.com/file/d/1SaK1LDhx7oo64ARdeji9JY07Adw-g_n2/view?usp=share_link")
+    squarePhotoUrl: ImageUrlConverter("https://drive.google.com/file/d/1SaK1LDhx7oo64ARdeji9JY07Adw-g_n2/view?usp=sharing")
  }
 ];
 
