@@ -15,8 +15,8 @@ function MeetTheTeam() {
   async function next() {
     const updatedCurrentMembers = await Promise.all(currentMembers.map(async member => {
       const indexOfMember = YtechTeam.indexOf(member);
-      if (indexOfMember === YtechTeam.length) {
-        return member = YtechTeam.at(-1);
+      if (indexOfMember === YtechTeam.length - 1) {
+        return member = YtechTeam.at(0);
       } else {
         return member = YtechTeam.at(indexOfMember + 1);
       }
@@ -28,7 +28,7 @@ function MeetTheTeam() {
     const updatedCurrentMembers = await Promise.all(currentMembers.map(member => {
       const indexOfMember = YtechTeam.indexOf(member);
       if (indexOfMember === 0) {
-        return member = YtechTeam.at(YtechTeam.length - 1);
+        return member = YtechTeam.at(-1);
       } else {
         return member = YtechTeam.at(indexOfMember - 1);
       }
