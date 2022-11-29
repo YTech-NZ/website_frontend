@@ -50,6 +50,7 @@ function MeetTheTeam() {
           <div className="member">
             <img src={member?.squarePhotoUrl} className="team-carousel-img" alt={`${member?.name} Photo`}/>
             <h3 className='team-carousel-name'>{member?.name}</h3>
+            <h4>{member?.title}</h4>
           </div>
         )
       })}
