@@ -1,0 +1,51 @@
+.meet-the-team {
+    h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .team-carousel {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+      
+        .member {
+          width: 33%;    
+          margin: 2%;
+          padding: 2%;
+
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
+        
+          h3 {
+            text-align: center;
+            margin-bottom: 2%;
+          }
+
+          h4 {
+            text-align: center;
+            font-weight: 400;
+            margin: 0;
+          }
+        }
+
+        .rightArrow {
+            margin-right: -30px;
+            position: absolute;
+            top: 40%;
+            right: 1px;
+            font-size: 4rem;
+          }
+          
+        .leftArrow {
+            margin-left: -30px;
+            position: absolute;
+            top: 40%;
+            left: 1px;    
+            font-size: 4rem;
+          }
+    }
+}

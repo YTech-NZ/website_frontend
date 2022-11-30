@@ -19,11 +19,11 @@
     return (
       <StyledSlider>
 
-  <img src={LEFT_ARROW} className="leftArrow" height="65px" width="65px"
-      onClick={prevSlide}/>
+        <img src={LEFT_ARROW} className="leftArrow" height="65px" width="65px"
+            onClick={prevSlide}/>
 
-  <img src={RIGHT_ARROW} className="rightArrow" height="65px" width="65px" 
-      onClick={nextSlide}/>
+        <img src={RIGHT_ARROW} className="rightArrow" height="65px" width="65px" 
+            onClick={nextSlide}/>
 
         {slides.map((slide: { image: any; }, index:any) => {
           return (
@@ -34,6 +34,7 @@
             </div>
           );
         })}
+
       </StyledSlider>
     );
   };
