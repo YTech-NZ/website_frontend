@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import phLogo from '../assets/logo_rgb.png'
+import phLogo from '../assets/YTechCreateOpsLogo.png'
 import '../styles/navbar.scss'
 
 function NavBar() {
