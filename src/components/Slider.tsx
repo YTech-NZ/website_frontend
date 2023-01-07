@@ -1,42 +1,56 @@
-  import { useState } from "react";
-  import { SlideImage, StyledSlider } from "./SlideImage";
-  import "../styles/splash.scss";
-  import LEFT_ARROW from "../assets/left_arrow.png"
-  import RIGHT_ARROW from "../assets/right_arrow.png"
+import { useEffect, useState } from "react";
+import "../styles/splash.scss";
+import LEFT_ARROW from "../assets/left_arrow.png"
+import RIGHT_ARROW from "../assets/right_arrow.png"
 
-  const Slider = ({ slides }:{slides: any}) => {
-    const [current, setCurrent] = useState(0);
-    const length = slides.length;
+const Slider = ({ slides }: { slides: any }) => {
+  const [marginInnerLeft, setMarginInnerLeft] = useState(-window.innerWidth);
+  const [marginOuterLeft, setMarginOuterLeft] = useState(0);
 
-    const nextSlide = () => {
-      setCurrent(current === length - 1 ? 0 : current + 1);
-    };
+  const nextSlide = () => {
+    if (((marginInnerLeft/ (-1 * window.innerWidth)))  % slides.length == 0){
+      setMarginOuterLeft(marginOuterLeft + (slides.length * window.innerWidth));
+    } 
+    setMarginInnerLeft(marginInnerLeft - window.innerWidth);
+  };
 
-    const prevSlide = () => {
-      setCurrent(current === 0 ? length - 1 : current - 1);
-    };
+  const prevSlide = () => {
+    if (((marginInnerLeft/ (-1 * window.innerWidth)))  % slides.length == 0){
+      setMarginOuterLeft(marginOuterLeft - (slides.length * window.innerWidth));
+    } 
 
-    return (
-      <StyledSlider>
+    setMarginInnerLeft(marginInnerLeft + window.innerWidth);
+  };
 
-        <img src={LEFT_ARROW} className="leftArrow" height="65px" width="65px"
-            onClick={prevSlide}/>
+  return (
+    <div className="carousel"style={{ marginLeft: `${marginOuterLeft}px` }}>
+      <div className="carousel__inner" style={{ marginLeft: `${marginInnerLeft}px` }}>
 
-        <img src={RIGHT_ARROW} className="rightArrow" height="65px" width="65px" 
-            onClick={nextSlide}/>
+        <img src={LEFT_ARROW} className="leftArrow" height="35px" width="25px"
+          onClick={prevSlide} />
 
-        {slides.map((slide: { image: any; }, index:any) => {
+        <img src={RIGHT_ARROW} className="rightArrow" height="35px" width="25px"
+          onClick={nextSlide} />
+
+        <div className="carousel__inner__image" key={-1}>
+              <img src={slides[slides.length - 1].image} alt="" />
+        </div>
+
+        {slides.map((slide: { image: any; }, index: any) => {
           return (
-            <div key={index}>
-              {index === current && (
-                <SlideImage src={slide.image} alt="" />
-              )}
+            <div className="carousel__inner__image" key={index}>
+              <img src={slide.image} alt="" />
             </div>
           );
         })}
 
-      </StyledSlider>
-    );
-  };
+        <div className="carousel__inner__image" key={slides.length}>
+              <img src={slides[0].image} alt="" />
+        </div>
 
-  export default Slider;
+      </div>
+    </div>
+  );
+};
+
+export default Slider;

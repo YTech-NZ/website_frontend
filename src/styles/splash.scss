@@ -1,20 +1,43 @@
 //Import Statements
-@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
-
-//Declarations
-$assetPath :"../assets";
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
 
 .rightArrow {
   position: absolute;
-  top: 40%;
-  right: 20px;
-  font-size: 5rem;
+  top: 50%;
+  right: 40px;
+  font-size: 2rem;
 }
 
 .leftArrow {
   position: absolute;
-  top: 40%;
-  left: 20px;    
-  font-size: 5rem;
+  top: 50%;
+  left: 40px;
+  font-size: 2rem;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  margin-left: 0;
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin-left: 0;
+    transition: margin-left 500ms ease-in-out;
+
+    &__image {
+      height: 100vh;
+      width: 100vw;
+
+      img {
+        height: 90vh;
+        width: 100vw;
+        object-fit: cover;
+      }
+    }
+  }
 }

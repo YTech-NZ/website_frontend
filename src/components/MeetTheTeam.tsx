@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import YtechTeam from '../data/YtechTeam'
 import { TeamMember } from '../types/TeamMember';
-import { StyledSlider } from './SlideImage';
+// import { StyledSlider } from './SlideImage';
 import LEFT_ARROW from "../assets/left_arrow.png"
 import RIGHT_ARROW from "../assets/right_arrow.png"
 import "../styles/meettheteam.scss";
