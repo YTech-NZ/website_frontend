@@ -1,10 +1,8 @@
 import "../styles/splash.scss";
 import Slider from "./Slider"; 
-// import Slider from "react-slick";
 import ImageUrlConverter from "../util/ImageLinkConverter";
 
-
-// ImageData is to be refractor later into Data class later on. 
+// ImageData is to be refactor later into Data class later on. 
 const imagesData = [
   {
     image: 
