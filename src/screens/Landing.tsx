@@ -25,11 +25,11 @@ function Landing() {
             {/*Green section with white text*/}
 
 
-            <SideSegment isLeft inverse title={"Founded by 7 South Auckland HS Students"} description={"Inspired by their own love for technology with the help of Edwina Mistry, who are passionate about providing insight for their fellow students into how tech is being used in various industries."}>
+            <SideSegment isLeft inverse title={"Founded by 7 South Auckland HS Students"} description={"Inspired by their own love for technology with the help of CreateOps, who are passionate about providing insight for their fellow students into how tech is being used in various industries."}>
                 <Image src="https://drive.google.com/file/d/1GD4DUn3ehKOqwz32R-tMjGnWSZw6wVlG/view" />
             </SideSegment>
 
-            <SideSegment isLeft={false} inverse={false} title={"Check out our events!"} description={"Since ‘Y-tech? 2k18’ — YTech NZ’s first event, the team has continued to educate students about the opportunities that tech pathways hold through events targeting various tech-related themes. Our latest event, ‘Beyond The Code’, showcased how tech is used in a wide range of industries and left students feeling inspired by hearing about a diverse range of techxpert’s journeys into both technical and non-technical roles. Check out this brief recap from our first major event, Walking on Mars, where students had a virtual tour of NASA’s JPL."}>
+            <SideSegment isLeft={false} inverse={false} title={"Check out our events!"} description={"Since YTech NZ’s first event in 2018, the team has continued to educate students about the opportunities that tech pathways hold through events targeting various tech-related themes. Our latest event, ‘Beyond The Code’, showcased how tech is used in a wide range of industries and left students feeling inspired by hearing about a diverse range of techxpert’s journeys into both technical and non-technical roles. Check out this brief recap from our first major event, Walking on Mars, where students had a virtual tour of NASA’s JPL."}>
                 <YouTubeVideo src="https://www.youtube.com/watch?v=iy3VW4L0dAY" />
             </SideSegment>
 
