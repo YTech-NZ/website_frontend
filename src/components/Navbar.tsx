@@ -55,7 +55,7 @@ function NavBar() {
           <a href="/" className='header__logo'>
             <img src={phLogo} alt="logo" />
           </a>
-          <div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
+          <div className={`header__links hide-for-mobile`}>
             <Link to="/about">About</Link>
             <Link to="/events">Events</Link>
             <Link to="/community">Community</Link>
