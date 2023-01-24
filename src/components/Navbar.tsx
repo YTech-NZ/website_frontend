@@ -52,7 +52,7 @@ function NavBar() {
             <span></span>
             <span></span>
           </div>
-          <a role="link" aria-disabled="true" className='header__logo'>
+          <a href="/" className='header__logo'>
             <img src={phLogo} alt="logo" />
           </a>
           <div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
