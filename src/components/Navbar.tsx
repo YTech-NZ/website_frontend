@@ -58,8 +58,8 @@ function NavBar() {
           <div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
             <Link to="/about">About</Link>
             <Link to="/events">Events</Link>
-            <Link to="/community">Community</Link>
-            <Link to="/joinus">Join Us</Link>
+            <Link style={{ pointerEvents: 'none' }} to={''}>Community</Link>
+            <Link style={{ pointerEvents: 'none' }} to={''}>Join Us</Link>
           </div>
         </nav>
         {/* <div className={`header__menu ${handleFades()} has-fade`}>
