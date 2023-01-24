@@ -56,10 +56,10 @@ function NavBar() {
             <img src={phLogo} alt="logo" />
           </a>
           <div className={`header__links hide-for-mobile ${navElementToHighlight}`}>
-            <Link to="/about">About</Link>
-            <Link to="/events">Events</Link>
-            <Link to="/community">Community</Link>
-            <Link to="/joinus">Join Us</Link>
+            <Link style={{ pointerEvents: 'none' }} to="/about">About</Link>
+            <Link style={{ pointerEvents: 'none' }} to="/events">Events</Link>
+            <Link style={{ pointerEvents: 'none' }} to="/community">Community</Link>
+            <Link style={{ pointerEvents: 'none' }} to="/joinus">Join Us</Link>
           </div>
         </nav>
         {/* <div className={`header__menu ${handleFades()} has-fade`}>
