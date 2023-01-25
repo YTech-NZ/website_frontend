@@ -1,6 +1,6 @@
 import Section from '../widgets/Section'
 import '../styles/footer.scss';
-import LOGO_BLACK from "../assets/CreateOpsYTech.png";
+import LOGO_BLACK from "../assets/CreateOpsYTechBlackBG.png";
 import LINKEDIN from "../assets/linkedin.png";
 import FACEBOOK from "../assets/facebook.png";
 import INSTAGRAM from "../assets/instagram.png";
