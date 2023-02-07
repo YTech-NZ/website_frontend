@@ -49,3 +49,20 @@
           }
     }
 }
+
+.fade {
+  animation-name: fadeMember;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeMember {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

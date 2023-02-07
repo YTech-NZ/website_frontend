@@ -11,6 +11,15 @@ function MeetTheTeam() {
   const [currentMembers, setCurrentMembers] = useState<(TeamMember | undefined)[]>(YtechTeam.slice(0, numOfMembersShown));
   const [slides, setSlides] = useState<HTMLImageElement[]>([]);
 
+  function animateMembers() {
+    const members = document.getElementsByClassName('member')!;
+    for(var i = 0, all = members.length; i < all; i++){   
+      members[i].classList.remove('fade');
+      let reflow = (members[i] as HTMLElement).offsetWidth;  // required to cause the animation to reset
+      members[i].classList.add('fade');
+    }
+  }
+
   async function next() {
     const updatedCurrentMembers = await Promise.all(currentMembers.map(async member => {
       const indexOfMember = YtechTeam.indexOf(member);
@@ -53,8 +62,8 @@ function MeetTheTeam() {
     <h1>Meet The Team</h1>
 
     <div className="team-carousel">
-      <img alt="left arrow" src={LEFT_ARROW} className="leftArrow" height="65px" width="65px" onClick={prev}/>
-      <img alt="right arrow" src={RIGHT_ARROW} className="rightArrow" height="65px" width="65px" onClick={next}/>
+      <img alt="left arrow" src={LEFT_ARROW} className="leftArrow" height="65px" width="65px" onClick={function() {prev(); animateMembers()}}/>
+      <img alt="right arrow" src={RIGHT_ARROW} className="rightArrow" height="65px" width="65px" onClick={function() {next(); animateMembers()}}/>
 
       {currentMembers.map((member) => {
         return (
