@@ -37,13 +37,15 @@ function MeetTheTeam() {
 
   // preloading all the images. reference: https://stackoverflow.com/questions/42615556/how-to-preload-images-in-react-js
   useEffect(() => {
+    let preloadedImages: typeof slides = [];
     YtechTeam.forEach((member) => {
       const image = member?.squarePhotoUrl as string;
       let preloadedImage = new Image();
       preloadedImage.src = image;
-      setSlides([...slides, preloadedImage])
+      preloadedImages.push(preloadedImage);
     })
-  }, [slides]);
+    setSlides(preloadedImages);
+  }, []);
 
   return (
     <div className="meet-the-team">
@@ -57,7 +59,7 @@ function MeetTheTeam() {
       {currentMembers.map((member) => {
         return (
           <div className="member">
-            <img src={member?.squarePhotoUrl} className="team-carousel-img" alt={`${member?.name}`}/>
+            <img src={member?.squarePhotoUrl} className="team-carousel-img" alt={`${member?.name}`} key={member?.name}/>
             <h3 className='team-carousel-name'>{member?.name}</h3>
             <h4>{member?.title}</h4>
           </div>
